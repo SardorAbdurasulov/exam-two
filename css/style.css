@@ -466,3 +466,263 @@ img {
   height: 2px;
   background-color: #949494;
 }
+
+.services-section {
+  padding-top: 191px;
+  margin-bottom: 235px;
+}
+
+.service-heading{
+  margin: 0;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: #333333;
+}
+
+.role-lists {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.role-item{
+  width: 193px;
+  margin-right: 13px;
+}
+
+.role-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.none {
+  display: none;
+}
+
+.role-link {
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 5px 5px 0 0;
+  padding-right: 33px;
+  padding-left: 33px;
+  padding-top: 30px;
+  padding-bottom: 28px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.role-link:hover {
+  opacity: 0.8;
+}
+
+.role-link:active {
+  opacity: 0.6;
+}
+
+.role-link::before {
+  content: "";
+  width: 54px;
+  height: 77px;
+  background-image: url("../img/doctor\ 1.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 21px;
+}
+.doctor::before {
+  background-image: url("../img/doctor.png");
+}
+.nurse::before {
+  background-image: url("../img/nurse.png");
+}
+.injection::before {
+  background-image: url("../img/injection.png");
+}
+.clean::before {
+  background-image: url("../img/clean.png");
+}
+.lupa::before {
+  background-image: url("../img/lupa.png");
+}
+.dog-and-cat::before {
+  background-image: url("../img/dog-and-cat.png");
+}
+.uzi::before {
+  background-image: url("../img/bone.png");
+}
+.chipping::before {
+  background-image: url("../img/Group.png");
+}
+.international-passports::before {
+  background-image: url("../img/account.png");
+}
+.vaccination::before {
+  background-image: url("../img/medicine.png");
+}
+.dentistry::before {
+  background-image: url("../img/tooth.png");
+}
+.home::before {
+  background-image: url("../img/veterinary.png");
+}
+
+.role-title {
+  margin: 0;
+  font-family: Futura PT;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+}
+
+.role-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.arrow-next {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  cursor: pointer;
+}
+
+.arrow-prev {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.role-item-inner {
+  width: 1223px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 0px 5px 5px 5px;
+  margin-top: 14px;
+}
+
+.cat {
+  margin-right: 67px;
+}
+.inner-title {
+  margin: 0;
+  font-family: Futura PT;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+
+.inner-text {
+  margin: 0;
+  width: 492px;
+  margin-bottom: 9px;
+  font-family: Futura PT;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.txt {
+  margin-bottom: 34px;
+}
+
+.price {
+  background: #FFBD54;
+  color: #FFFFFF;
+  margin-right: 21px;
+  position: relative;
+  z-index: 1;
+  padding-left: 63px;
+}
+
+.price:hover {
+  background: #333333;
+  color: #FFBD54;
+}
+
+.price:active {
+  opacity: 0.6;
+}
+
+.price::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/money\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  left: 35px;
+}
+
+.write {
+  padding-left: 64px;
+  position: relative;
+  z-index: 1;
+}
+
+.write::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/document\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 14px;
+  left: 35px;
+}
+
+.sub {
+  position: relative;
+  z-index: 1;
+}
+
+.sub::before {
+  content: "";
+  width: 100%;
+  height: 22px;
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  top: 194px;
+  left: 0;
+}
+
+.big-dog {
+  padding-bottom: 50px;
+}
+
+.dogs {
+  padding-bottom: 50px;
+}
