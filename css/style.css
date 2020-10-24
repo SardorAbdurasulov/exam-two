@@ -496,6 +496,7 @@ img {
 .role-item{
   width: 193px;
   margin-right: 13px;
+  text-align: center;
 }
 
 .role-item:nth-child(6n) {
@@ -507,15 +508,15 @@ img {
 }
 
 .role-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
   background: #FFFFFF;
+  height: 200px;
   border: 1px solid #F3F3F3;
   border-radius: 5px 5px 0 0;
-  padding-right: 33px;
-  padding-left: 33px;
-  padding-top: 30px;
-  padding-bottom: 28px;
-  display: block;
+  padding: 25px;
   position: relative;
   z-index: 1;
 }
@@ -580,10 +581,8 @@ img {
 
 .role-title {
   margin: 0;
-  font-family: Futura PT;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
   text-align: center;
   color: #333333;
 }
@@ -601,6 +600,14 @@ img {
   top: 60px;
   right: 0;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.arrow-next:hover {
+  background-color: #fff;
+}
+.arrow-next:active {
+  opacity: 0.5;
 }
 
 .arrow-prev {
@@ -611,6 +618,14 @@ img {
   left: 0;
   outline: none;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.arrow-prev:hover {
+  background-color: #fff;
+}
+.arrow-prev:active {
+  opacity: 0.5;
 }
 
 .role-item-inner {
@@ -653,44 +668,44 @@ img {
   margin-bottom: 34px;
 }
 
-.price {
-  background: #FFBD54;
-  color: #FFFFFF;
-  margin-right: 21px;
+.site-button-yellow {
   position: relative;
-  z-index: 1;
-  padding-left: 63px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  background: #FFBD54;
+  border-radius: 3px;
+  color: #fff;
+  padding: 15px 48px;
+  transition: 0.3s ease;
 }
 
-.price:hover {
+.site-button-yellow:hover {
   background: #333333;
   color: #FFBD54;
 }
 
-.price:active {
+.site-button-yellow:active {
   opacity: 0.6;
 }
 
-.price::before {
+.button-left::before {
   content: "";
   width: 21px;
   height: 21px;
   background-image: url("../img/money\ 1.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
   position: absolute;
   top: 14px;
-  left: 35px;
+  left: 20px;
 }
 
-.write {
-  padding-left: 64px;
+.button-right {
   position: relative;
-  z-index: 1;
 }
 
-.write::before {
+.button-right::before {
   content: "";
   width: 21px;
   height: 21px;
@@ -700,7 +715,7 @@ img {
   background-size: contain;
   position: absolute;
   top: 14px;
-  left: 35px;
+  left: 20px;
 }
 
 .sub {
@@ -719,10 +734,35 @@ img {
   left: 0;
 }
 
-.big-dog {
-  padding-bottom: 50px;
+.subscription {
+  max-width: 100%;
+  background-image: url("../img/bg-bottom.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.dogs {
-  padding-bottom: 50px;
+.subscription-form {
+  padding-top: 278px;
+  padding-bottom: 153px;
+  padding-left: 287px;
+}
+
+.subscription-input {
+  width: 335px;
+  height: 50px;
+  padding-left: 22px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #949494;
+  margin-right: 21px;
+}
+
+.subscription-input:not(:placeholder-shown):invalid {
+  box-shadow: 0 0 0 3px tomato;
+}
+
+.button-input {
+  border: none;
+  outline: none;
 }
