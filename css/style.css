@@ -766,3 +766,133 @@ img {
   border: none;
   outline: none;
 }
+
+.news {
+  max-width: 100%;
+  display: flex;
+  background-color: #333333;
+  background-image: url("../img/Group\ 66.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.yandex-link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.yandex-img {
+  display: block;
+}
+
+.news-left {
+  width: 375px;
+  padding-top: 62px;
+  margin-left: 165px;
+}
+
+.news__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+}
+
+.news__text {
+  width: 334px;
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.name-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  color: #949494;
+  outline: none;
+  border: none;
+}
+
+.email-input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  color: #949494;
+  outline: none;
+  border: none;
+}
+
+.question-input {
+  display: block;
+  width: 100%;
+  height: 165px;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  color: #949494;
+  outline: none;
+  padding-bottom: 120px;
+  border: none;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    .doctor::before {
+      background-image: url("../img/doctor@2x.png");
+    }
+    .nurse::before {
+      background-image: url("../img/nurse@2x.png");
+    }
+    .injection::before {
+      background-image: url("../img/injection@2x.png");
+    }
+    .clean::before {
+      background-image: url("../img/clean@2x.png");
+    }
+    .lupa::before {
+      background-image: url("../img/lupa@2x.png");
+    }
+    .dog-and-cat::before {
+      background-image: url("../img/dog-and-cat@2x.png");
+    }
+    .uzi::before {
+      background-image: url("../img/bone@2x.png");
+    }
+    .chipping::before {
+      background-image: url("../img/Group@2x.png");
+    }
+    .international-passports::before {
+      background-image: url("../img/account@2x.png");
+    }
+    .vaccination::before {
+      background-image: url("../img/medicine@2x.png");
+    }
+    .dentistry::before {
+      background-image: url("../img/tooth@2x.png");
+    }
+    .home::before {
+      background-image: url("../img/veterinary@2x.png");
+    }
+    .news {
+      background-image: url("../img/Group\ 66@2x.png.png");
+    }
+    .subscription {
+      background-image: url("../img/bg-bottom@2x.png");
+    }
+    .button-right::before {
+      background-image: url("../img/document\ 1@2x.png.png");
+    }
+}
