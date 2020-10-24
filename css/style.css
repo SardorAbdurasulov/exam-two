@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Futura PT";
-  src: url("subset-FuturaPT-Bold.woff2") format("woff2"),
-      url("subset-FuturaPT-Bold.woff") format("woff");
+  src: url("../fonts/subset-FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Futura PT Book";
-  src: url("subset-FuturaPT-Book.woff2") format("woff2"),
-      url("subset-FuturaPT-Book.woff") format("woff");
+  src: url("../fonts/subset-FuturaPT-Book.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -395,3 +395,74 @@ img {
   opacity: 0.6;
 }
 
+.quote {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 148px;
+  height: 78px;
+  background-image: url("../img/“.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.quote::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  width: 148px;
+  height: 78px;
+  background-image: url("../img/“-1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.quote__title {
+  margin-top: 35;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.quote-text {
+  position: relative;
+  width: 650px;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #949494;
+}
+
+.quote-text::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 140px;
+  height: 2px;
+  background-color: #949494;
+}
+.quote-text::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 140px;
+  height: 2px;
+  background-color: #949494;
+}
